@@ -1,0 +1,40 @@
+/* Estado inicial do card */
+.col {
+    position: relative;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Transição suave para o movimento e a sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.col:hover {
+  /* Eleva o card em 5px no eixo Y */
+  transform: translateY(-5px);
+  
+  /* Aumenta a dispersão e a opacidade da sombra */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #305dff;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
